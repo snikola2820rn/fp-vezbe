@@ -4,34 +4,34 @@ Uputstvo
 
 ### Rad iz browser-a
 
-   * Kliknuti na zeleno "Code" dugme u gornjem desnomn uglu
+  * Kliknuti na zeleno "Code" dugme u gornjem desnomn uglu
 
-   * Izabrati tab "Codespaces"
+  * Izabrati tab "Codespaces"
 
-   * Kliknuti "Create codespace on master"
+  * Kliknuti "Create codespace on master"
 
-     * Ovo će pokrenuti online verziju VS Code-a sa podešenim okruženjem
+    * Ovo će pokrenuti online verziju VS Code-a sa podešenim okruženjem
   
 ### Rad lokalno
   
-   * Mora biti instaliran Docker
+  * Mora biti instaliran Docker
 
-   * Uputstvo je za VS Code jer je najbolja podrška za dev container
+  * Uputstvo je za VS Code jer je najbolja podrška za dev container
 
-   * Moguće je koristiti i druge IDE-e ali je podešavanje nešto složenije
+  * Moguće je koristiti i druge IDE-e ali je podešavanje nešto složenije
    
-   * Klonirati vaš (fork-ovan) repo lokalno
+  * Klonirati vaš (fork-ovan) repo lokalno
 
-   * Otvoriti direktorijum u VS Code-u
+  * Otvoriti direktorijum u VS Code-u
 
-   * Otvoriti tab sa ekstenzijama
+  * Otvoriti tab sa ekstenzijama
 
-   * Tražiti "remote"
+  * Tražiti "remote"
 
-     * Ekstenzija sadrži 4 druge ekstenzije
+    * Ekstenzija sadrži 4 druge ekstenzije
    
-   * Instalirati ekstenziju (sve 4 će biti automatski instalirane)
+  * Instalirati ekstenziju (sve 4 će biti automatski instalirane)
 
-   * Kada otvorite direktorijum u VS Code-u treba sam da pita "Reopen in Container" (pop-up)
+  * Kada otvorite direktorijum u VS Code-u treba sam da pita "Reopen in Container" (pop-up)
 
-   * Ukoliko ne pita, otvoriti komandnu paletu (f1) i tražiti "Dev Containers: Open Folder in Container..."
+  * Ukoliko ne pita, otvoriti komandnu paletu (f1) i tražiti "Dev Containers: Open Folder in Container..."
