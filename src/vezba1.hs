@@ -13,16 +13,13 @@
 			- Teorija (zadaci), 5. ili 6. nedelja u terminu predavanja, 15 bodova
         - projekat
             - usmena odbrana, u ispitnom roku, 40 bodova
-        - bonus 5+5 bodova
     
     Literatura
-        - http://learnyouahaskell.com/  <-  PREDAVANJA
+        - http://learnyouahaskell.com/  <-  Ovo pratimo na vezbama
         - http://book.realworldhaskell.org/
-             
-    Instalacija
-        - https://www.haskell.org
-        - Notepad++ (Preferences -> Language -> Tab Settings -> Haskell -> Replace by space (4))
-		- VS Code + Haskell extension
+    
+    Repozitorium
+        - https://github.com/Idokorro/fp-vezbe
     
     Glasgow Haskell Compiler
         - ghc - compiler
@@ -131,19 +128,11 @@
     
     Imena funkcija i promenljivih pocinju malim slovom
     
-    Imena Klasa i tipova pocinju velikim slovom
+    Imena klasa i tipova pocinju velikim slovom
 
 -}
 
-doubleMe x = x + x
 
-doubleUs :: Int -> Int -> (Int, Int)
-doubleUs x y = (doubleMe x, doubleMe y)
-
-isSmall :: Int -> String
-isSmall x = if x < 5
-                then "mali"
-                else show 5
 
 {-  Liste
 
@@ -185,16 +174,7 @@ isSmall x = if x < 5
 
 -}
 
--- primer len, rmnupp, [[]]
-len' :: [a] -> Int
-len' xs = sum [1 | _ <- xs]
 
-rmNonUpper :: [Char] -> [Char]
-rmNonUpper st = [c | c <- st, c `elem` ['A'..'Z']]
-
-even' :: [[Int]] -> [[Int]]
-even' xxs = [[x | x <- xs, even x] 
-                | xs <- xxs]
 
 {-  Tuple
 
@@ -211,9 +191,4 @@ even' xxs = [[x | x <- xs, even x]
         - "zip" - spaja 2 liste u tuplove
 
 -}
-
--- primer pitagora
-
-pitagora :: Int -> [(Int,Int,Int)]
-pitagora x = [(a,b,c) | a <- [1..x], b <- [1..x], c <- [1..x], a^2 + b^2 == c^2, a < b]
 
