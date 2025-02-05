@@ -2,7 +2,7 @@ Uputstvo
 ========
   * Fork-ovati ovaj repo
 
-  * Rad iz browser-a
+### Rad iz browser-a
 
     * Kliknuti na zeleno "Code" dugme u gornjem desnomn uglu
 
@@ -12,7 +12,7 @@ Uputstvo
 
       * Ovo će pokrenuti online verziju VS Code-a sa podešenim okruženjem
   
-  * Rad lokalno
+### Rad lokalno
   
     * Mora biti instaliran Docker
 

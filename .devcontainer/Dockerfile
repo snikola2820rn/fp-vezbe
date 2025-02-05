@@ -2,7 +2,7 @@ FROM debian:bookworm-slim as base
 
 ENV LANG C.UTF-8
 
-ARG GHC_VERSION=9.12.1
+ARG GHC_VERSION=9.10.1
 ARG STACK_VERSION=recommended
 ARG STACK_RESOLVER=nightly
 ARG CABAL_VERSION=recommended
