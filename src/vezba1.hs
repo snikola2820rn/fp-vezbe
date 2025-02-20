@@ -17,6 +17,8 @@
     Literatura
         - http://learnyouahaskell.com/  <-  Ovo pratimo na vezbama
         - http://book.realworldhaskell.org/
+
+        _ https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems - Zadaci
     
     Repozitorium
         - https://github.com/Idokorro/fp-vezbe
@@ -132,7 +134,15 @@
 
 -}
 
+doubleMe x = x + x
 
+doubleUs :: Int -> Int -> (Int, Int)
+doubleUs x y = (doubleMe x, doubleMe y)
+
+isSmall :: Int -> String
+isSmall x = if x < 5
+                then "mali"
+                else show 5
 
 {-  Liste
 
@@ -147,7 +157,7 @@
         - "++" - spajanje 2 liste
         - ":" - dodavanje elementa na pocetak
         - "!!" - indeksiranje
-    
+
     Funkcije
         - "head", "last"
         - "tail", "init"
@@ -170,11 +180,19 @@
         - "cycle", "repeat", "replicate"
     
     List comprehension
-        - [ x | x <- [50..100], x `mod` 7 == 3]
+        - [x | x <- [50..100], x `mod` 7 == 3]
 
 -}
 
+len' :: [a] -> Int
+len' xs = sum [1 | _ <- xs]
 
+rmNonUpper :: [Char] -> [Char]
+rmNonUpper st = [c | c <- st, c `elem` ['A'..'Z']]
+
+even' :: [[Int]] -> [[Int]]
+even' xxs = [[x | x <- xs, even x]
+                | xs <- xxs]
 
 {-  Tuple
 
@@ -192,3 +210,5 @@
 
 -}
 
+pitagora :: Int -> [(Int, Int, Int)]
+pitagora x = [(a, b, c) | a <- [1..x], b <- [1..x], c <- [1..x], a^2 + b^2 == c^2, a < b]
