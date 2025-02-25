@@ -18,7 +18,7 @@
         - http://learnyouahaskell.com/  <-  Ovo pratimo na vezbama
         - http://book.realworldhaskell.org/
 
-        _ https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems - Zadaci
+        - https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems - Zadaci
     
     Repozitorium
         - https://github.com/Idokorro/fp-vezbe
