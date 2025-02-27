@@ -184,6 +184,8 @@ isSmall x = if x < 5
 
 -}
 
+-- posto pisemo sta nesto jeste, jednako razdvaja potpis funkcije od tela
+
 len' :: [a] -> Int
 len' xs = sum [1 | _ <- xs]
 

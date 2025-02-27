@@ -13,6 +13,7 @@
 
 -}
 
+
 {-  Klase tipova (Typeclass)
 
     Najpribliznije interfejsima kod OOP
