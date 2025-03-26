@@ -12,7 +12,7 @@
         - map :: (a -> b) -> [a] -> [b]
 
 -}
-
+x = 3 ::Integer
 
 {-  Klase tipova (Typeclass)
 
