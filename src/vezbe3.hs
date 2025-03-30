@@ -123,34 +123,3 @@ qsort [] = []
 qsort (x:xs) = let smSorted = qsort [a | a <- xs, a <= x]
                    lgSorted = qsort [a | a <- xs, a > x]
                in smSorted ++ [x] ++ lgSorted
-
-
-lastElem :: [a] -> a
-lastElem [x,_] = x
-lastElem (x:xs) = lastElem xs
-
-kthElem :: Int -> [a] -> a 
-kthElem n xs
-        | n < 0 = error "negativan"
-        | n >= (length xs) = error "mnogo"
-kthElem _ [] = error "prazna"
-kthElem 0 (x:xs) = x
-kthElem n (x:xs) = kthElem (n - 1) xs
-
-numElems :: [a] -> Int
-numElems [] = 0
-numElems (x:xs) = 1 + numElems xs
-
-revList :: [a] -> [a]
-revList [] = []
-revList (x:xs) = revList xs ++ [x]
-
-isPal :: (Eq a) => [a] -> Bool
-isPal xs = xs == (revList xs)
-
--- flatten :: [a] -> [a]
--- flatten [x] = [x]
--- flatten (x:xs) = flatten x ++ flatten xs
-
-foldl' :: Foldable t => (b->a->b)->b->t a->b
-foldl' _ x  = 
