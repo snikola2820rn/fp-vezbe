@@ -66,8 +66,8 @@ rpn = head . foldl helper [] . words
           helper (x:y:ys) "-" = (y - x) : ys
           helper xs str = read str : xs
 
-main = do rez <- fmap (show . rpn) getLine
-          putStrLn rez
+main1 = do rez <- fmap (show . rpn) getLine
+           putStrLn rez
 
 {-  Applicative functor
 
@@ -119,7 +119,13 @@ main = do rez <- fmap (show . rpn) getLine
 
 -}
 
+main = do rez <- show . rpn <$> getLine
+          putStrLn rez
 
+instance Applicative Piksel where
+    pure x = GScale x
+    (GScale f) <*> (GScale x) = GScale (f x)
+    (Color fr fg fb) <*> (Color r g b) = Color (fr r) (fg g) (fb b)
 
 {-  Monoid
 
